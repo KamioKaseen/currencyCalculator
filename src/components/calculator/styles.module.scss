@@ -1,0 +1,38 @@
+.calculator {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  
+    &__title {
+      font-size: 3rem;
+      color: $whiteColor;
+    }
+  
+    &__button {
+      position: absolute;
+      top: 63%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: none;
+      border: none;
+
+      @media (max-width: 576px) {
+        top: 57%;
+      }
+    }
+
+    &__changeImg {
+      width: 50%;
+      cursor: pointer;
+      transition: transform .2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+        filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(2804%) hue-rotate(230deg) brightness(113%) contrast(86%);
+      }
+    }
+  }
+  

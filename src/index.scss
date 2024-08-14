@@ -1,0 +1,23 @@
+* {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+body {
+  background: $gradientColor;
+}

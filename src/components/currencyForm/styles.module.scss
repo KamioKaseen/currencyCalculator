@@ -1,0 +1,43 @@
+.currencyForm {
+    display: flex;
+    gap: 6rem;
+    margin-top: 2rem;
+
+    @media (max-width: 576px) {
+      flex-direction: column;
+    }
+
+    &__container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: $transparentColor;
+        box-shadow: $boxShadowBlack;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 2rem;
+        padding-top: 3rem;
+        border-radius: 1rem;
+        font-size: 2rem;
+        border: .2rem solid $whiteColor;
+        outline: none;
+        transition: border-color .3s linear;
+    }
+
+    &__input:focus {
+        border-color: $blueColor;
+    }
+
+    &__text {
+        position: absolute;
+        top: 2rem;
+        right: 3rem;
+        font-size: 1.4rem;
+        color: $grayColor;
+    }
+}
+

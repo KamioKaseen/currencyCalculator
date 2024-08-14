@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 1.3rem; 
+  }
+  
+::-webkit-scrollbar-track {
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $blueColor; 
+  border-radius: 1rem;
+}
